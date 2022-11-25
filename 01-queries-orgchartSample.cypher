@@ -3,15 +3,15 @@
 ////////////////////////////////////////////////////////////
 
 // ================ EC Hierarchy ======================== //
-MATCH (N1:EMPLOYEE) -[:RL___EC]-> (N2:EMPLOYEE)
+MATCH (N1:EMPLOYEE) -[:RL_EC]-> (N2:EMPLOYEE)
 RETURN N1, N2
 
 // ================ DC Hierarchy ======================== //
-MATCH (N1:EMPLOYEE) -[:RL___DC]-> (N2:EMPLOYEE)
+MATCH (N1:EMPLOYEE) -[:RL_DC]-> (N2:EMPLOYEE)
 RETURN N1, N2
 
 // ================ Gemini Hierarchy ======================== //
-MATCH p=()-[r:RL___Gemini]->() RETURN p LIMIT 25
+MATCH p=()-[r:RL_Gemini]->() RETURN p LIMIT 25
 
 
 
@@ -19,7 +19,7 @@ MATCH p=()-[r:RL___Gemini]->() RETURN p LIMIT 25
 ///////////////////////////////////////////////////////////////////////////
 // =============== Fetching given Employee's Hierarchy ================= //
 //////////////////////////////////////////////////////////////////////////
-MATCH p=()-[r:RL___Gemini]->(:EMPLOYEE {Name: "Bhavik Garg"}) RETURN p
+MATCH p=()-[r:RL_Gemini]->(:EMPLOYEE {Name: "Bhavik Garg"}) RETURN p
 
 
 
@@ -29,11 +29,11 @@ MATCH p=()-[r:RL___Gemini]->(:EMPLOYEE {Name: "Bhavik Garg"}) RETURN p
 //////////////////////////////////////////////////////////////////
 
 // ================ EC Hierarchy ======================== //
-MATCH q=()-[d:RL___EC*1]->() RETURN q
+MATCH q=()-[d:RL_EC*1]->() RETURN q
 
 // ================ DC Hierarchy ======================== //
-MATCH q=()-[d:RL___DC*1]->() RETURN q
+MATCH q=()-[d:RL_DC*1]->() RETURN q
 
 // ================ Gemini Hierarchy ======================== //
-MATCH q=()-[d:RL___Gemini*1]->() RETURN q
+MATCH q=()-[d:RL_Gemini*1]->() RETURN q
 
