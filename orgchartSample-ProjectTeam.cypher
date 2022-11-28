@@ -1,11 +1,11 @@
 CREATE
-(anil:EMPLOYEE{name:"Anil Singh", Designation:"Managing Director"}),
-(sunil:EMPLOYEE{name:"Sunil Kumar", Designation:"Lead FES Analytics-Infra C++/DB"}),
-(mannat:EMPLOYEE{name:"Mannat Kaur", Designation:"Senior Business Analyst L2"}),
-(vikas:EMPLOYEE{name:"Vikas Gupta", Designation:"Lead Business Analyst L2"}),
-(rohit:EMPLOYEE{name:"Rohit Goyal", Designation:"Assistant Vice President"}),
-(anmol:EMPLOYEE{name:"Anmol Kohli", Designation:"Technology Solutions Lead L2"}),
-(vasu:EMPLOYEE{name:"Vasu Garg", Designation:"Senior Software Engineer L1"}),
+(anil:EMPLOYEE{name:"Anil Singh", officialID:"GSI G 818", Designation:"Managing Director"}),
+(sunil:EMPLOYEE{name:"Sunil Kumar", officialID:"GSI C 806", Designation:"Lead FES Analytics-Infra C++/DB"}),
+(mannat:EMPLOYEE{name:"Mannat Kaur", officialID:"GSI G 891", Designation:"Senior Business Analyst L2"}),
+(vikas:EMPLOYEE{name:"Vikas Gupta", officialID:"GSI G 1415", Designation:"Lead Business Analyst L2"}),
+(rohit:EMPLOYEE{name:"Rohit Goyal", officialID:"GSI C 918", Designation:"Assistant Vice President"}),
+(anmol:EMPLOYEE{name:"Anmol Kohli", officialID:"GSI G 134", Designation:"Technology Solutions Lead L2"}),
+(vasu:EMPLOYEE{name:"Vasu Garg", officialID:"GSI G 649", Designation:"Senior Software Engineer L1"}),
 
 (development:TEAM{name:"Application Development"}),
 (devops:TEAM{name:"DevOps"}),
